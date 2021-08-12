@@ -22,6 +22,10 @@ export default function PokeList() {
           element.idEvolutionChain = index;
           return element;
         });
+        console.log(
+          "evolutionChainList",
+          JSON.stringify(evolutionChainList, undefined, 4)
+        );
         setPokemonChainList(evolutionChainList);
       })
       .catch((error) => {
